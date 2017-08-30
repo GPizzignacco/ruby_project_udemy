@@ -1,3 +1,7 @@
 <h1>All my Articles</h1>
 
-<%= render partial: 'form' %>
+<% @articles.each do |a| %>
+    <p><strong>title: </strong><%= a.title %></p>
+    <p><strong>description: </strong><%= a.description %></p>
+    <hr/>
+<% end %>
