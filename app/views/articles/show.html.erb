@@ -2,3 +2,6 @@
 
 <p><strong>title:</strong> <%= @article.title %></p>
 <p><strong>description:</strong> <%= @article.description %></p>
+
+<%= link_to 'Back', articles_path, class: 'btn btn-info' %>
+<%= link_to 'Edit article', edit_article_path(@article), class: 'btn btn-primary' %>

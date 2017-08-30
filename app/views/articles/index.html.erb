@@ -3,5 +3,10 @@
 <% @articles.each do |a| %>
     <p><strong>title: </strong><%= a.title %></p>
     <p><strong>description: </strong><%= a.description %></p>
+    <p>
+        <%= link_to 'Show', article_path(a), class: 'btn btn-info' %>
+        <%= link_to 'Edit', edit_article_path(a), class: 'btn btn-primary' %>
+        <%= link_to 'Delete', article_path(a), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-danger' %>
+    </p>
     <hr/>
 <% end %>

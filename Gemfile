@@ -23,6 +23,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Simple Form aims to be as flexible as possible while helping you with powerful components to create your forms
 gem 'simple_form'
+# This library easily integrates the SweetAlert 2 library into a Rails application
+gem 'rails-assets-sweetalert2', '~> 5.1.1', source: 'https://rails-assets.org'
+gem 'sweet-alert2-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

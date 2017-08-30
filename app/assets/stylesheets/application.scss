@@ -12,5 +12,7 @@
  *
  */
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "sweetalert2";
+@import "blog";
 @import "bootstrap-sprockets";
 @import "bootstrap";

@@ -21,12 +21,7 @@
   </nav>
   
   <div class="col-md-8">
-    <% flash.each do |name, msg| %>
-      <div class="alert alert-success">
-        <%= msg %>
-      </div>
-    <% end %>
-    
+    <%= render partial: 'layouts/messages' %>
     <%= yield %>
   </div>
 
