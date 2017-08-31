@@ -1,12 +1,16 @@
-<h1>All my Articles</h1>
-
-<% @articles.each do |a| %>
-    <p><strong>title: </strong><%= a.title %></p>
-    <p><strong>description: </strong><%= a.description %></p>
-    <p>
-        <%= link_to 'Show', article_path(a), class: 'btn btn-info' %>
-        <%= link_to 'Edit', edit_article_path(a), class: 'btn btn-primary' %>
-        <%= link_to 'Delete', article_path(a), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-danger' %>
-    </p>
-    <hr/>
-<% end %>
+<div class="container">
+    <div class="row">
+        <h2>All my Articles</h2>
+        
+        <% @articles.each do |a| %>
+            <p><strong>title: </strong><%= a.title %></p>
+            <p><strong>description: </strong><%= a.description %></p>
+            <p>
+                <%= link_to 'Show', article_path(a), class: 'btn btn-info' %>
+                <%= link_to 'Edit', edit_article_path(a), class: 'btn btn-primary' %>
+                <%= link_to 'Delete', article_path(a), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-danger' %>
+            </p>
+            <hr/>
+        <% end %>
+    </div>
+</div>
