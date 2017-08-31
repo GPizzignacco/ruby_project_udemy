@@ -26,6 +26,8 @@ gem 'simple_form'
 # This library easily integrates the SweetAlert 2 library into a Rails application
 gem 'rails-assets-sweetalert2', '~> 5.1.1', source: 'https://rails-assets.org'
 gem 'sweet-alert2-rails'
+# font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
+gem "font-awesome-rails", '~> 4.7.0.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,16 +1,75 @@
+<section class="hero">
 <div class="container">
-    <div class="row">
-        <h2>All my Articles</h2>
-        
-        <% @articles.each do |a| %>
-            <p><strong>title: </strong><%= a.title %></p>
-            <p><strong>description: </strong><%= a.description %></p>
-            <p>
-                <%= link_to 'Show', article_path(a), class: 'btn btn-info' %>
-                <%= link_to 'Edit', edit_article_path(a), class: 'btn btn-primary' %>
-                <%= link_to 'Delete', article_path(a), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-danger' %>
-            </p>
-            <hr/>
-        <% end %>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="hero-content text-center">
+          <h1>Design, collaborate, win!</h1>
+          <p class="intro">Introducing “Sedna”. A responsive one page website, designed & developed exclusively for Codrops.</p>
+          <a href="#" class="btn btn-fill btn-large btn-margin-right">Download</a> <a href="#" class="btn btn-accent btn-large">Learn more</a>
+      </div>
     </div>
+  </div>
 </div>
+<div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+<section class="intro section-padding">
+    <div class="container">
+    <div class="col-md-4 intro-feature">
+        <div class="intro-icon">
+            <i class="fa fa-coffee"></i>
+        </div>
+        <div class="intro-content">
+            <h5>Modern Design</h5>
+            <p>Designed with modern trends and techniques in mind, Sedna will help your product stand out in an already saturated market.</p>
+        </div>
+    </div>
+    <div class="col-md-4 intro-feature">
+        <div class="intro-icon">
+            <i class="fa fa-comments-o"></i>
+        </div>
+        <div class="intro-content">
+            <h5>Modern Design</h5>
+            <p>Designed with modern trends and techniques in mind, Sedna will help your product stand out in an already saturated market.</p>
+        </div>
+    </div>
+    <div class="col-md-4 intro-feature">
+        <div class="intro-icon">
+            <i class="fa fa-diamond"></i>
+        </div>
+        <div class="intro-content last">
+            <h5>Responsive Development</h5>
+            <p>Built using the latest web technologies like html5, css3, and jQuery, rest assured Sedna will look smashing on every device under the sun.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="features section-padding" id="features">
+    <div class="container">
+        <div class="row col-sm-12">
+            <div class="feature-list">
+                <h3>Sedna will drive your product forward</h3>
+                <p>Present your product, start up, or portfolio in a beautifully modern way. Turn your visitors in to clients.</p>
+                <ul class="features-stack">
+                    <% @articles.each do |a| %>
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe03e;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5><%= a.title %></h5>
+                                <p><%= a.description %></p>
+                            </div>
+                            <div class="articles-buttons">
+                            <%= link_to 'Show', article_path(a), class: 'btn' %>
+                            <%= link_to 'Edit', edit_article_path(a), class: 'btn' %>
+                            <%= link_to 'Delete', article_path(a), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn' %>    
+                            </div>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

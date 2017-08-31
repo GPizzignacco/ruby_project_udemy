@@ -1,21 +1,13 @@
 <section class="navigation">
     <header>
         <div class="header-content">
-            <%=link_to(image_tag("sedna-logo.png"), root_path) %>
-            <div class="header-nav">
-                <nav>
-                    <ul class="primary-nav">
-                        <li><%= link_to 'All Articles', articles_path %></li>
-                        <li><%= link_to 'New Article', new_article_path %></li>
-                    </ul>
-                    <ul class="member-actions">
-                        <li><a href="#download" class="login">Log in</a></li>
-                        <li><a href="#download" class="btn-white btn-small">Sign up</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="navicon">
-                <a class="nav-toggle" href="#"><span></span></a>
+            <div class="topnav" id="myTopnav">
+                <%=link_to(image_tag("sedna-logo.png"), root_path) %>
+                <%= link_to 'All Articles', articles_path %>
+                <%= link_to 'New Article', new_article_path %>
+                <a href="#download" class="login">Log in</a>
+                <a href="#download" class="btn-white btn-small">Sign up</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
     </header>
