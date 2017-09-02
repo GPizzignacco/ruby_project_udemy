@@ -1,13 +1,11 @@
-<section class="page"> 
-    <div class="container content">
-         <div class="row col-sm-12">
-            <h2>Articles show Page</h2>
-            
-            <p><strong>title:</strong> <%= @article.title %></p>
-            <p><strong>description:</strong> <%= @article.description %></p>
-            
-            <%= link_to 'Back', articles_path, class: 'btn' %>
-            <%= link_to 'Edit article', edit_article_path(@article), class: 'btn' %>
-        </div>
+<div class="container content">
+     <div class="row col-sm-12">
+        <h2>Articles show Page</h2>
+        
+        <p><strong>title:</strong> <%= @article.title %></p>
+        <p><strong>description:</strong> <%= @article.description %></p>
+        
+        <%= link_to 'Back', articles_path, class: 'btn' %>
+        <%= link_to 'Edit article', edit_article_path(@article), class: 'btn' %>
     </div>
-</section>
+</div>

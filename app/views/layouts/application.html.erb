@@ -9,8 +9,10 @@
   </head>
   <body id="top">
       <%= render partial: "shared/navbar" %>
-      <div class="col-md-12 msg-box"><%= render partial: "shared/messages" %></div>
-      <%= yield %>
+      <div class="page">
+        <div class="msg-box col-sm-12"><%= render partial: "shared/messages" %></div>
+        <%= yield %>
+      </div>
       <%= render partial: "shared/footer"%>
   </body>
 </html>

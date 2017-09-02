@@ -68,6 +68,25 @@ h5 {
   padding: 15px 40px;
 }
 
+.msg-box{
+  z-index: 1000;
+}
+
+.btn-cancel{
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+}
+
+.swal2-confirm.styled{
+  background-color: rgb(99, 189, 62);
+}
+
+.swal2-cancel.styled{
+  background-color: rgb(236, 70, 70) !important;
+}
+
 /* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
