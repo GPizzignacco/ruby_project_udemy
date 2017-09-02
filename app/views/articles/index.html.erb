@@ -6,7 +6,10 @@
           <div class="banner-text text-center">
             <h1>Flosix</h1>
             <p>Design Studio from Australia</p>
-            <nav role="navigation"> <a href="#services" class="banner-btn"><img src="images/down-arrow.png" alt=""></a></nav>
+            <nav role="navigation">
+              <a href="#services" class="banner-btn">
+                <%= image_tag "down-arrow.png" %>
+              </a></nav>
           </div>
           <!-- banner text --> 
         </div>
@@ -63,10 +66,9 @@
       </div>
         <div class="col-md-6">
             <% @articles.each do |a| %>
-                <p><b><%= a.title %></b></p>
+                <h5><%= link_to "#{a.title}", article_path(a) %></h5>
                 <p><%= a.description %></p>
                  <p>
-                  <%= link_to 'Show', article_path(a), class: 'btn' %>
                   <%= link_to 'Edit', edit_article_path(a), class: 'btn' %>
                   <%= link_to 'Delete', article_path(a), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn' %>    
                 </p>
