@@ -1,0 +1,6 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.input :email %>
+  <%= f.input :password %>
+  <div class="pull-right"><%= f.submit(@user.new_record? ? "Sign up" : "Update your account", class: 'btn') %></div>
+<% end %>
