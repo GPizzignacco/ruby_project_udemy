@@ -11,11 +11,7 @@
 // about supported directives.
 //= require jquery
 //= require bootstrap-sprockets
-//= require jquery_ujs
 //= require sweetalert2
 //= require sweet-alert2-rails
-//= require jquery.flexslider-min
-//= require jquery.fancybox.pack
-//= require main
 //= require turbolinks
 //= require_tree .

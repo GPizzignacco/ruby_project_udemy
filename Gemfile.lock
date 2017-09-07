@@ -185,7 +185,7 @@ DEPENDENCIES
   rails (= 4.2.5)
   rails-assets-sweetalert2 (~> 5.1.1)!
   rails_12factor
-  sass-rails (~> 5.0)
+  sass-rails (>= 3.2)
   sdoc (~> 0.4.0)
   simple_form
   spring
@@ -196,4 +196,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.1
