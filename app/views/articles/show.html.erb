@@ -1,24 +1,19 @@
-<section class="page">
-    <div class="center-content">
-        <div class="col-md-12 text-center">
-            <h2>Articles show Page</h2>
-            
-            <% if @article.user %>
-                <ul class="col-sm-12">
-                    <li><%= link_to gravatar_for(@article.user), user_path(@article.user) %></li>
-                    <br/>
-                    <li><%= link_to @article.user.username, user_path(@article.user) %></li>
-                    <li><%= pluralize(@article.user.articles.count, "article") %></li>
-                </ul>
-            <% end %>  
-
-            <div class="col-md-12 mg-top-20">
-                <p><strong>title:</strong> <%= @article.title %></p>
-                <p><strong>description:</strong> <%= @article.description %></p>        
-            </div>
-        
+<section class="article-page">
+    <div class="col-md-8 col-centered">
+        <%= link_to user_path(@article.user) do %>
+        <div class="col-md-2 text-center"><%= gravatar_for @article.user, size: 90 %></div>
+        <div class="col-md-10 align-left"><h1><%= @article.user.username %></h1></div>
+        <% end %>
+        <div class="col-md-10 align-left"><p><%= @article.user.description if @article.user.description %></p></div>
+    </div>
+    <div class="article-wrapper">
+        <div class="col-centered col-md-7">
+            <h1><%= @article.title %></h1>
+            <%= image_tag("8.jpg") %>
+            <p><%= @article.description %></p>        
             <%= link_to 'Back', articles_path, class: 'btn' %>
             <%= link_to 'Edit article', edit_article_path(@article), class: 'btn' %>
         </div>
     </div>
 </section>
+

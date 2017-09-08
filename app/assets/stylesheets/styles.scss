@@ -142,6 +142,37 @@ section.author-page{
   }
 }
 
+.article-page{
+  h1{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .article-wrapper{
+    margin-top: 25px;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #eee;
+    float: left;
+    width: 100%;
+    h1{
+      margin-top: 0;
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    img{
+      max-width: 100%;
+    }
+    p{
+      font-size: 20px;
+      line-height: 1.8;
+      color: rgba(0,0,0,.8);
+      margin-top: 20px;
+      font-family: Georgia;
+    }
+  }
+}
+
 .col-centered{
   float: none;
   margin: 0 auto;
