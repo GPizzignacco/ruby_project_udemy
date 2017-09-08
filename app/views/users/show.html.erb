@@ -5,6 +5,9 @@
         <div class="col-md-10 align-left"><p><%= @user.description if @user.description %></p></div>
     </div>
     <div class="greybg">
-        <%= render 'articles/article', obj: @user.articles %>
+        <%= render 'articles/article', obj: @user_articles  %>
+        <div class="text-center">
+            <%= will_paginate @user_articles %>
+        </div>
     </div>
 </section>

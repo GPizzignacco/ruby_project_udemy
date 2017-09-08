@@ -28,9 +28,12 @@ gem 'rails-assets-sweetalert2', '~> 5.1.1', source: 'https://rails-assets.org'
 gem 'sweet-alert2-rails'
 # font-awesome-rails provides the Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 gem "font-awesome-rails", '~> 4.7.0.2'
-
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb, DataMapper and Sequel
+gem 'will_paginate', '~> 3.0.12'
+# Extends will_paginate stylings to match the pagination styling conventions in Bootstrap
+gem 'bootstrap-will_paginate', '~> 1.0.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

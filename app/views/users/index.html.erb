@@ -2,16 +2,19 @@
     <div class="container">
       <div class="col-md-12">
         <h1 class="sitetitle">Our brilliant minds</h1>
-	    <p class="subtitle">Sign up and join the club.</p>
-	  </div>
-	    <% @users.each do |user| %>
-	    <div class="col-md-3 text-center">
+	      <p class="subtitle">Sign up and join the club.</p>
+	    </div>
+      <% @users.each do |user| %>
+        <div class="col-md-3 text-center">
             <div class="author-card">
                 <%= link_to gravatar_for(user), user_path(user) %>
                 <h1><%= link_to user.username, user_path(user) %></h1>
                 <h2><%= pluralize(user.articles.count, "article") if user.articles %></h2>
             </div>
         </div>
-        <% end %>
+      <% end %>
+      <div class="col-md-12 text-center">
+        <%= will_paginate %>
       </div>
+    </div>
 </section>

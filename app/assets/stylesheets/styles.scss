@@ -65,13 +65,14 @@ img{
   }
   .navbar-nav > li > a{
     color: $dark-grey;
+    transition: all ease-in-out 0.3s;
     &.active{
       border: 1px solid;
       border-radius: 35px;
       padding: 8px;
       margin-top: 5px;
     }
-    &:hover, &.active{
+    &:hover, &.active, &:focus{
       color: $dark-green;
       background: transparent;
     }
@@ -189,6 +190,9 @@ section.author-page{
   border-radius: 3px;
   box-shadow: 0 1px 7px rgba(0,0,0,.05);
   margin-bottom: 15px;
+  p{
+    height: 40px;
+  }
   &.sm{
     border: 1px solid #eee;
     h1{
