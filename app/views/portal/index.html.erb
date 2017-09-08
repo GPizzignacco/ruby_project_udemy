@@ -1,8 +1,8 @@
 <div class="container">
 	<div class="mainheading">
-		<h1 class="sitetitle">Mediumish</h1>
+		<h1 class="sitetitle">What is your mind?</h1>
 		<p class="lead">
-			 A Ghost theme, medium style, simply perfect for bloggers
+			 Sign up and let the world know.
 		</p>
 	</div>
 
@@ -19,6 +19,14 @@
               <p><%= article.description %></p>
             </div>
           <% end %>
+          <div class="author-info col-md-6 col-xs-12">
+            <div class="author-img-wrapper">
+              <%= link_to user_path(article.user) do %>
+                <%= gravatar_for(article.user) %>
+                <small><%= article.user.username %></small>
+              <% end %>
+            </div>
+          </div>
         </div>
       </div>
     <% end %>

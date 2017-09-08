@@ -19,6 +19,10 @@ p{
   color: $less-dark-grey;
 }
 
+.align-left{
+  text-align: left;
+}
+
 .navbar.custom-nav{
   border: 1px solid #eee;
   background: #fff;
@@ -87,6 +91,18 @@ section.featured-posts{
   width: 100%;
 }
 
+section.author-page{
+  h1{
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .post-card{
+    h2{
+      font-size: 22px;
+    }
+  }
+}
+
 .author-description{
   font-size: 16px;
   font-weight: 300;
@@ -111,11 +127,13 @@ section.featured-posts{
   margin-top: 25px;
   padding: 20px 0 20px 0;
   border-top: 1px solid #eee;
+  float: left;
+  width: 100%;
   .post-card{
     background: #fff;
     padding: 10px;
     border-radius: 3px;
-    box-shadow: 0px 2px 3px 0px #eee;
+    box-shadow: 0 1px 7px rgba(0,0,0,.05);
     margin-bottom: 15px;
     img{
       max-width: 100%;

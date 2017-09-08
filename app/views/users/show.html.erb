@@ -1,12 +1,10 @@
-<section class="page">
-    <div class="center-content">
-        <div class="col-md-8 text-center">
-            <h3>Welcome to <%= @user.username %>'s profile</h3>
-            <div>
-                <%= gravatar_for @user, size: 150 %>
-            </div>
-            <h4><%= @user.username %>'s articles: </h4>
-            <%= render 'articles/article', obj: @user.articles %>
-        </div>
+<section class="author-page">
+    <div class="col-md-8 col-centered">
+        <div class="col-md-2 text-center"><%= gravatar_for @user, size: 90 %></div>
+        <div class="col-md-10 align-left"><h1><%= @user.username %></h1></div>
+        <div class="col-md-10 align-left"><p><%= @user.description if @user.description %></p></div>
+    </div>
+    <div class="greybg">
+        <%= render 'articles/article', obj: @user.articles %>
     </div>
 </section>
