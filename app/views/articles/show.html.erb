@@ -1,8 +1,8 @@
 <section class="article-page">
     <div class="col-md-8 col-centered">
         <%= link_to user_path(@article.user) do %>
-        <div class="col-md-2 text-center"><%= gravatar_for @article.user, size: 90 %></div>
-        <div class="col-md-10 align-left"><h1><%= @article.user.username %></h1></div>
+            <div class="col-md-2 text-center"><%= gravatar_for @article.user, size: 90 %></div>
+            <div class="col-md-10 align-left"><h1><%= @article.user.username %></h1></div>
         <% end %>
         <div class="col-md-10 align-left"><p><%= @article.user.description if @article.user.description %></p></div>
     </div>
