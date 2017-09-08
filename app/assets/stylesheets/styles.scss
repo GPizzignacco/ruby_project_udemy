@@ -33,6 +33,10 @@ img{
   margin: 0 auto;
 }
 
+.subtitle{
+  margin-bottom: 20px
+}
+
 
 .navbar.custom-nav{
   border: 1px solid #eee;
@@ -66,6 +70,7 @@ section.featured-posts{
         background-position: 38% 22% !important;
         background-origin: border-box!important;
         border-top-left-radius: 2px; 
+        background-image: image-url("8.jpg");
       }
     }
     .author-info{
@@ -211,11 +216,6 @@ section.author-page{
     }
   }
 }
-
-.subtitle{
-  margin-bottom: 20px
-}
-
 
 @media only screen and (min-width: 980px){
   .author-info{
