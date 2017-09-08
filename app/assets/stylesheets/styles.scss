@@ -114,6 +114,27 @@ section.author-page{
   }
 }
 
+.articles-list{
+  .author-card{
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    font-family: Helvetica;
+    h1{
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    h2{
+      font-size: 16px;
+      color: $less-dark-grey;
+      margin-top: 10px;
+    }
+  }  
+}
+
 .author-description{
   font-size: 16px;
   font-weight: 300;

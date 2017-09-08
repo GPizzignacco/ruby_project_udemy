@@ -1,8 +1,6 @@
-<div class="col-md-8">
-    <%= simple_form_for @article do |f| %>
-      <%= f.input :title %>
-      <%= f.input :description %>
-      <div class="pull-right"><%= f.button :submit, class: 'btn' %></div>
-      <%= link_to "Cancel" , articles_path, class: 'btn' %>
-    <% end %>
-</div>
+<%= simple_form_for @article do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <div class="pull-right"><%= f.button :submit, class: 'btn' %></div>
+  <%= link_to "Cancel" , articles_path, class: 'btn' %>
+<% end %>
