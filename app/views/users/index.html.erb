@@ -1,15 +1,11 @@
-<section class="page">
-    <div class="center-content">
-        <div class="col-md-12 text-center">
-            <h3>Users all</h3>
-            <br/>
-            <% @users.each do |user| %>
-                <ul class="col-md-4">
-                    <li><%= link_to gravatar_for(user), user_path(user) %> </li>
-                    <li><%= link_to user.username, user_path(user) %></li>
-                    <li><%= pluralize(user.articles.count, "article") if user.articles %></li>
-                </ul>
-            <% end %>
-        </div>
-    </div>
-</section>
+<div class="col-md-12 text-center">
+    <h3>Users all</h3>
+    <br/>
+    <% @users.each do |user| %>
+        <ul class="col-md-4">
+            <li><%= link_to gravatar_for(user), user_path(user) %> </li>
+            <li><%= link_to user.username, user_path(user) %></li>
+            <li><%= pluralize(user.articles.count, "article") if user.articles %></li>
+        </ul>
+    <% end %>
+</div>

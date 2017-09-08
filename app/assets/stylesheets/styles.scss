@@ -1,3 +1,24 @@
+$light-green: #1abc9c;
+$dark-green: #119e82;
+$light-grey: #fafafa;
+$dark-grey: rgba(0,0,0,.8);
+$less-dark-grey: rgba(0,0,0,.44);
+
+a{
+  text-decoration: none !important;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all ease-in-out .4s;
+  color: $dark-grey;
+  &:hover{
+    color: $less-dark-grey;
+  }
+}
+
+p{
+  font-size: 16px;
+  color: $less-dark-grey;
+}
+
 .navbar.custom-nav{
   border: 1px solid #eee;
   background: #fff;
@@ -20,12 +41,6 @@ section.featured-posts{
     height: auto;
     overflow: hidden;
     margin-bottom: 15px;
-    .text-content{
-      p{
-        font-weight: 300;
-        font-size: 16px;
-      }
-    }
     .image-content{
       height: 258px;
       padding: 0;
@@ -38,6 +53,21 @@ section.featured-posts{
         border-top-left-radius: 2px; 
       }
     }
+    .author-info{
+      small{
+        margin-left: 10px;
+        line-height: 2.7em;
+        color: rgba(0,0,0,.7);
+        font-weight: 300;
+      }
+     .author-img-wrapper{
+      width: auto;
+      float: left;
+      img{
+        width: 30px;
+      } 
+     }
+    }
   }
 }
 
@@ -45,13 +75,70 @@ section.featured-posts{
   border-top: 1px solid #eaeaea;
   margin-bottom: 15px;
   line-height: 2em;
+  padding-top: 15px;
 }
 
 .mg-top-20{
   margin-top:20px;
 }
-.center-content{
+.center-page{
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+
+.author-description{
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Helvetica;
+  color: rgba(0,0,0,.6);
+  line-height: 1.5em;
+}
+
+.navbar-brand{
+  a{
+    font-size: 40px;
+    font-weight: bold; 
+    color: $light-green;
+    &:hover{
+      color: $dark-green;
+    }
+  }
+}
+
+.greybg{
+  background: $light-grey;
+  margin-top: 25px;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #eee;
+  .post-card{
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0px #eee;
+    margin-bottom: 15px;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 980px){
+  .author-info{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: block;
+  }
+  .center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
