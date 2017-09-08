@@ -4,5 +4,5 @@
 # Examples:
 # Mayor.create(name: 'Emanuel', city: cities.first)
 
-Article.create(title: 'My first article', description: 'To help improve accessibility for people using screen readers, attribute, when creating a close button.')
-Article.create(title: 'My second article', description: 'To help improve accessibility for people using screen readers, attribute, when creating a close button.')
+Article.create(title: 'My first article', description: 'To help improve accessibility for people using screen readers, attribute, when creating a close button.', user_id: 1)
+User.create(username: "bepelucio", email: "hello@bepelucio.com", password_digest: "esquilinho")
