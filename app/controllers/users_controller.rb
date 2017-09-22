@@ -16,10 +16,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-        flash[:success] = "Welcome to the Ruby Project #{@user.username}"
-        redirect_to 'index'
+      flash[:success] = "Welcome to the Ruby Project #{@user.username}"
+      redirect_to 'index'
     else
-        render 'new'
+      render 'new'
     end
   end
   
@@ -27,10 +27,10 @@ class UsersController < ApplicationController
   
   def update
     if @user.update(user_params)
-        flash[:success] = "Your account was updated successfully"
-        redirect_to articles_path
+      flash[:success] = "Your account was updated successfully"
+      redirect_to user_path
     else
-        render 'edit'
+      render 'edit'
     end
   end
   
@@ -41,6 +41,6 @@ class UsersController < ApplicationController
   end
   
   def user_params
-      params.require(:user).permit(:username, :email, :password)
+    params.require(:user).permit(:username, :email, :description, :password)
   end
 end

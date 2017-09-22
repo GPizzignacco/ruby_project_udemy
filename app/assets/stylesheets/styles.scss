@@ -6,7 +6,6 @@ $less-dark-grey: rgba(0,0,0,.44);
 $red: #d9534f;
 $dark-red: #ac2925;
 
-
 a{
   text-decoration: none !important;
   -webkit-transition: all .4s ease-in-out;
@@ -86,27 +85,32 @@ img{
       }
     }
   }
-  .navbar-nav > li > a{
-    color: $dark-grey;
-    transition: all ease-in-out 0.3s;
-    &.active{
-      border: 1px solid;
-      border-radius: 35px;
-      padding: 8px;
-      margin-top: 5px;
+  .navbar-nav{
+    .dropdown-menu{
+      margin-top: 6px;
+      padding: 0;
     }
-    &:hover, &.active, &:focus{
-      color: $dark-green;
-      background: transparent;
-    }
-  }
-  .navbar-nav > li > .dropdown-menu{
-    padding: 0;
-    li .btn-danger{
-      background-color: $red;
-      color: #fff;
-      &:hover{
-        background-color: $dark-red;
+    li, .dropdown-menu{
+      a{
+        color: $dark-grey;
+        transition: all ease-in-out 0.3s;
+        &.active{
+          border: 1px solid;
+          border-radius: 35px;
+          padding: 8px;
+          margin-top: 5px;
+        }
+        &:hover, &.active, &:focus{
+          color: $dark-green;
+          background: transparent;
+        }
+      }
+      .danger-text{
+        color: $red;
+        &:hover{
+          background: $dark-red;
+          color: #fff;
+        }
       }
     }
   }

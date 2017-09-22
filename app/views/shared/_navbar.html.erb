@@ -13,14 +13,14 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Articles", articles_path, class: cp('/articles') %></li>
-        <li><%= link_to "Users", users_path %></li>
+        <li><%= link_to "Users", users_path, class: cp('/users') %></li>
         <% if logged_in? %>
           <li class="user-dropdown">
             <span class="fa fa-user" data-toggle="dropdown"></span>
             <ul class="dropdown-menu">
               <li><%= link_to "View Profile", user_path(current_user) %></li>
               <li><%= link_to "Edit Account", edit_user_path(current_user) %></li>
-              <li><%= link_to "Logout", logout_path, method: :delete, class: 'btn-danger' %></li>
+              <li><%= link_to "Logout", logout_path, method: :delete, class: 'danger-text' %></li>
             </ul>
           </li>
         <% else %>
