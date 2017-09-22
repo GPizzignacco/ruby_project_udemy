@@ -1,0 +1,10 @@
+<section class="author-page">
+  <div class="col-md-6 col-centered">
+    <h1>Login</h1>
+    <%= simple_form_for :session, url: login_path do |f| %>
+      <%= f.input :email %>
+      <%= f.input :password %>
+      <div class="pull-right"><%= f.submit('Login', class: 'btn') %></div>
+    <% end %>
+  </div>
+</div>

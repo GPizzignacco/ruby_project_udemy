@@ -1,16 +1,16 @@
 <section class="articles-list">
-    <div class="container">
-      <div class="col-md-12">
-        <h1 class="sitetitle">All articles</h1>
-		    <p class="subtitle">
-			    From our users crazy mind.
-		    </p>
-      </div>
-      <%= render 'articlesm', obj: @articles %>
-      <div class="col-md-12 text-center">
-        <%= will_paginate %>
-      </div>
+  <div class="container">
+    <div class="col-md-12">
+      <h1 class="sitetitle">All articles</h1>
+	    <p class="subtitle">
+		    From our users crazy mind.
+	    </p>
     </div>
+    <%= render 'articlesm', obj: @articles %>
+    <div class="col-md-12 text-center">
+      <%= will_paginate %>
+    </div>
+  </div>
 </section>
 
 

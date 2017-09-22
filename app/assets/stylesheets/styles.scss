@@ -3,6 +3,8 @@ $dark-green: #119e82;
 $light-grey: #fafafa;
 $dark-grey: rgba(0,0,0,.8);
 $less-dark-grey: rgba(0,0,0,.44);
+$red: #d9534f;
+$dark-red: #ac2925;
 
 
 a{
@@ -46,6 +48,27 @@ img{
       background: #ccc;
     }
   }
+  .user-dropdown{
+    background: $light-green;
+    margin-left: 15px;
+    border-radius: 35px;
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+      cursor: pointer;
+      background: $dark-green;
+    }
+    span.fa.fa-user{
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      padding: 10px;
+    }
+  }
   .logo-icon{
     padding: 5px;
     img{
@@ -75,6 +98,16 @@ img{
     &:hover, &.active, &:focus{
       color: $dark-green;
       background: transparent;
+    }
+  }
+  .navbar-nav > li > .dropdown-menu{
+    padding: 0;
+    li .btn-danger{
+      background-color: $red;
+      color: #fff;
+      &:hover{
+        background-color: $dark-red;
+      }
     }
   }
 }
