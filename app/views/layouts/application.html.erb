@@ -8,12 +8,14 @@
     <%= csrf_meta_tags %>
   </head>
   <body id="top">
-      <%= render partial: "shared/navbar" %>
+    <%= render partial: "shared/navbar" %>
       <div class="msg-box col-sm-12"><%= render partial: "shared/messages" %></div>
       <%= yield %>
       <div class="col-md-12">
         <%= debug(params) if Rails.env.development? %>
       </div>
-      <%= render partial: "shared/footer"%>
+    </div>
+    <!-- container -->
+    <%= render partial: "shared/footer"%>
   </body>
 </html>

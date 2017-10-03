@@ -21,9 +21,11 @@
           <% end %>
           <div class="author-info col-md-6 col-xs-12">
             <div class="author-img-wrapper">
-              <%= link_to user_path(article.user) do %>
-                <%= gravatar_for(article.user) %>
-                <small><%= article.user.username %></small>
+              <% if article.user %>
+                <%= link_to user_path(article.user) do %>
+                  <%= gravatar_for(article.user) %>
+                  <small><%= article.user.username %></small>
+                <% end %>
               <% end %>
             </div>
           </div>

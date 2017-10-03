@@ -274,11 +274,18 @@ section.author-page{
 }
 
 .footer{
+  padding: 10px 10px 0px;
+  border: 1px solid #eee;
   img.footer-icon{
     width: 20px;
     margin-top: -5px;
   }
 }
+
+.swal2.swal2-confirm.styled{
+  background-color: #4CAF50 !important;
+}
+
 
 @media only screen and (min-width: 980px){
   .author-info{
